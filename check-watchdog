@@ -1,0 +1,19 @@
+#!/usr/bin/env php
+<?php
+## Checks watchdog logs on a site and counts warnings and errors
+##
+## Usage: fin check-watchdog
+#: exec_target = cli
+
+if (empty($argv[1])) {
+  unset($_SERVER['argv'][1]);
+  unset($argv[1]);
+}
+
+$loader = require_once '/var/www/' . $_ENV['DOCROOT'] . '/autoload.php';
+
+use DrupalKit\Docksal\Util\SingleCommandApplication;
+use DrupalKit\Docksal\Command\WatchdogCheck;
+
+$application = new SingleCommandApplication(new WatchdogCheck());
+$application->run();

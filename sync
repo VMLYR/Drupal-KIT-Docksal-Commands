@@ -1,0 +1,19 @@
+#!/usr/bin/env php
+<?php
+## Sync a site with another environment
+##
+## Usage: fin sync
+#: exec_target = cli
+
+if (empty($argv[1])) {
+  unset($_SERVER['argv'][1]);
+  unset($argv[1]);
+}
+
+$loader = require_once '/var/www/' . $_ENV['DOCROOT'] . '/autoload.php';
+
+use DrupalKit\Docksal\Util\SingleCommandApplication;
+use DrupalKit\Docksal\Command\Sync;
+
+$application = new SingleCommandApplication(new Sync());
+$application->run();
