@@ -2,12 +2,12 @@
 
 ## Run all linters against specified files, dirs
 ##
-## Usage: fin lint <path>
+## Usage: fin kit/lint <path>
 
 #-------------------------- Sanity Check --------------------------------
 
 if [[ "$1" == "" ]]; then
-  echo "Usage: fin lint <path>"
+  echo "Usage: fin kit/lint <path>"
   exit 1
 fi
 
@@ -21,10 +21,10 @@ if [[ -z "$@" ]]; then
   exit 0;
 fi
 
-# fin eslint $@
+# fin kit/eslint $@
 EXIT_CODE=$(($EXIT_CODE + $?))
 
-fin phpcs $@
+fin kit/phpcs $@
 EXIT_CODE=$(($EXIT_CODE + $?))
 
 exit $EXIT_CODE

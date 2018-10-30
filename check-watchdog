@@ -2,7 +2,7 @@
 <?php
 ## Checks watchdog logs on a site and counts warnings and errors
 ##
-## Usage: fin check-watchdog
+## Usage: fin kit/check-watchdog
 #: exec_target = cli
 
 if (empty($argv[1])) {

@@ -2,7 +2,7 @@
 
 ## Run Code Sniffer (phpcs) against given path
 ##
-## Usage: fin phpcs <path>
+## Usage: fin kit/phpcs <path>
 ##
 ## Uses Drupal standards.
 ##
@@ -12,7 +12,7 @@
 #-------------------------- Sanity Check --------------------------------
 
 if [[ "$1" == "" ]]; then
-  echo "Usage: fin phpcs <path>"
+  echo "Usage: fin kit/phpcs <path>"
   exit 1
 fi
 

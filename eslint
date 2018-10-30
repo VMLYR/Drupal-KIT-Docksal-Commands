@@ -2,12 +2,12 @@
 
 ## Run eslint against specified files, dirs
 ##
-## Usage: fin eslint <path>
+## Usage: fin kit/eslint <path>
 
 #-------------------------- Sanity Check --------------------------------
 
 if [[ "$1" == "" ]]; then
-  echo "Usage: fin eslint <path>"
+  echo "Usage: fin kit/eslint <path>"
   exit 1
 fi
 

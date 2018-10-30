@@ -2,7 +2,7 @@
 
 ## Initialize Sites
 ##
-## Usage: fin init-sites
+## Usage: fin kit/init-sites
 
 #-------------------------- Helper functions --------------------------------
 

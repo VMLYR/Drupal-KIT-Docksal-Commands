@@ -2,7 +2,7 @@
 
 ## Run Code Sniffer (phpcbf) against given path
 ##
-## Usage: fin phpcbf <path>
+## Usage: fin kit/phpcbf <path>
 ##
 ## Uses Drupal standards.
 ##
@@ -12,7 +12,7 @@
 #-------------------------- Sanity Check --------------------------------
 
 if [[ "$1" == "" ]]; then
-  echo "Usage: fin phpcbf <path>"
+  echo "Usage: fin kit/phpcbf <path>"
   exit 1
 fi
 
@@ -20,7 +20,7 @@ fi
 
 #-------------------------- Execution --------------------------------
 
-fin run phpcbf \
+fin run kit/phpcbf \
   --standard=Drupal -n \
   --extensions="php,module,inc,install,test,profile,theme" \
   --ignore="*.pages*.inc" \

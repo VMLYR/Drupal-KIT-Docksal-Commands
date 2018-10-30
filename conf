@@ -2,7 +2,7 @@
 <?php
 ## Import/export environment specific configuration for a site
 ##
-## Usage: fin conf
+## Usage: fin kit/conf
 #: exec_target = cli
 
 if (empty($argv[1])) {

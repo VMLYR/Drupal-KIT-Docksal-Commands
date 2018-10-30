@@ -2,7 +2,7 @@
 <?php
 ## Wrapper for running front-end development tools
 ##
-## Usage: fin swig gulp-watch
+## Usage: fin kit/swig gulp-watch
 #: exec_target = cli
 
 if (empty($argv[1])) {

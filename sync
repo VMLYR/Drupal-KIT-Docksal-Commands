@@ -2,7 +2,7 @@
 <?php
 ## Sync a site with another environment
 ##
-## Usage: fin sync
+## Usage: fin kit/sync
 #: exec_target = cli
 
 if (empty($argv[1])) {
