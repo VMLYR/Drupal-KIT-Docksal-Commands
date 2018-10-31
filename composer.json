@@ -1,0 +1,17 @@
+{
+  "name": "vmlyr-drupal/kit-docksal-commands",
+  "description": "Docksal Commands for VMLYR Drupal KIT",
+  "license": "GPL-2.0+",
+  "type": "library",
+  "homepage": "https://github.com/VML/Drupal-KIT-Docksal-Commands",
+  "authors": [
+    {
+      "name": "Garrett Rathbone",
+      "email": "garrett.rathbone@vml.com"
+    }
+  ],
+  "require": {
+    "oomphinc/composer-installers-extender": "^1.0",
+    "vmlyr-drupal/kit-docksal-utilities": "^8.0"
+  }
+}
