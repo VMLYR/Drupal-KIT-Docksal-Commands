@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+## Run drupal command in project docroot
+##
+## Usage: fin kit/drupal <command>
+
+#-------------------------- Execution --------------------------------
+
+cd $PROJECT_ROOT/$DOCROOT
+
+fin drupal $@
+
+#-------------------------- END: Execution --------------------------------
