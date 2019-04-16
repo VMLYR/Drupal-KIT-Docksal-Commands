@@ -33,10 +33,7 @@ composer.json file.
  - `kit/phpcbf` – Run Code Beautifier & Fixer (`phpcbf`) against a given
  path.
  - `kit/phpcs` – Run Code Sniffer (`phpcs`) against a given path.
- - `kit/swig` – A wrapper for running front-end development tools, like
- `gulp-watch` and `gulp-build`. Theme source and commands can be
- modified via the `.docksal/configuration.swig.yml` in the docksal
- directory.
+ - `kit/gulp` - Run gulp in the "source" directory.
  - `kit/sync` – Sync database (and optionally files) to a local
  environment from an external environment. After the database is
  imported, the site runs various updates and imports configuration as a
