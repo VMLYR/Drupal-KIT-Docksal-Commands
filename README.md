@@ -33,6 +33,7 @@ composer.json file.
  - `kit/phpcbf` – Run Code Beautifier & Fixer (`phpcbf`) against a given
  path.
  - `kit/phpcs` – Run Code Sniffer (`phpcs`) against a given path.
+ - `kit/npm` - Run npm in the "source" directory.
  - `kit/gulp` - Run gulp in the "source" directory.
  - `kit/sync` – Sync database (and optionally files) to a local
  environment from an external environment. After the database is
