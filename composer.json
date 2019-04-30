@@ -12,6 +12,6 @@
   ],
   "require": {
     "oomphinc/composer-installers-extender": "^1.0",
-    "vmlyr-drupal/kit-docksal-utilities": "^8.0"
+    "vmlyr-drupal/kit-drush-commands": "^8.0"
   }
 }

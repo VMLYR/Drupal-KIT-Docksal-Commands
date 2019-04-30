@@ -1,19 +1,10 @@
-#!/usr/bin/env php
-<?php
-## Sync a site with another environment
+#!/usr/bin/env bash
+
+## Sync local environment with most recent code, database, and configuration.
 ##
-## Usage: fin kit/sync
-#: exec_target = cli
+## Usage: fin kit/conf <args>
 
-if (empty($argv[1])) {
-  unset($_SERVER['argv'][1]);
-  unset($argv[1]);
-}
-
-$loader = require_once '/var/www/' . $_ENV['DOCROOT'] . '/autoload.php';
-
-use DrupalKit\Docksal\Util\SingleCommandApplication;
-use DrupalKit\Docksal\Command\Sync;
-
-$application = new SingleCommandApplication(new Sync());
-$application->run();
+#-------------------------- Execution --------------------------------
+cd ${PROJECT_ROOT}/${DOCROOT}
+fin drush kit:sync "$@"
+#-------------------------- END: Execution --------------------------------

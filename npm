@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
-
 #: exec_target = cli
+## Run npm in the theme source directory
 
-cd $PROJECT_ROOT/source
-npm $@
+#-------------------------- Execution --------------------------------
+cd ${PROJECT_ROOT}/source
+npm "$@"
+#-------------------------- END: Execution --------------------------------

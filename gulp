@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
-
 #: exec_target = cli
 
-cd $PROJECT_ROOT/source
-npm run gulp $@
+## Run gulp in the theme source directory
+
+#-------------------------- Execution --------------------------------
+cd ${PROJECT_ROOT}/source
+npm run gulp "$@"
+#-------------------------- END: Execution --------------------------------

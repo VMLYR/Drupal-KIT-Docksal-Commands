@@ -1,13 +1,10 @@
 #!/usr/bin/env bash
 
-## Run drupal command in project docroot
+## Import/export environment specific configuration for a site
 ##
-## Usage: fin kit/drupal <command>
+## Usage: fin kit/conf <args>
 
 #-------------------------- Execution --------------------------------
-
-cd $PROJECT_ROOT/$DOCROOT
-
-fin drupal $@
-
+cd ${PROJECT_ROOT}/${DOCROOT}
+fin drush kit:theme "$@"
 #-------------------------- END: Execution --------------------------------

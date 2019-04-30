@@ -1,19 +1,10 @@
-#!/usr/bin/env php
-<?php
+#!/usr/bin/env bash
+
 ## Import/export environment specific configuration for a site
 ##
-## Usage: fin kit/conf
-#: exec_target = cli
+## Usage: fin kit/conf <args>
 
-if (empty($argv[1])) {
-  unset($_SERVER['argv'][1]);
-  unset($argv[1]);
-}
-
-$loader = require_once '/var/www/' . $_ENV['DOCROOT'] . '/autoload.php';
-
-use DrupalKit\Docksal\Util\SingleCommandApplication;
-use DrupalKit\Docksal\Command\DrupalConfig;
-
-$application = new SingleCommandApplication(new DrupalConfig());
-$application->run();
+#-------------------------- Execution --------------------------------
+cd ${PROJECT_ROOT}/${DOCROOT}
+fin drush kit:conf "$@"
+#-------------------------- END: Execution --------------------------------
