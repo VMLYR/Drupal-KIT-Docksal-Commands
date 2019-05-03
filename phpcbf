@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Abort if anything fails
+set -e
+
 ## Run Code Sniffer (phpcbf) against given path
 ##
 ## Usage: fin kit/phpcbf <path>
