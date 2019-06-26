@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+# Abort if anything fails
+set -e
+
+## Run Drupal Check (drupal-check) against given path
+##
+## Usage: fin kit/drupal-check <path>
+##
+## Run static code analysis.
+##
+
+#-------------------------- Execution --------------------------------
+if command -v "$PROJECT_ROOT"/vendor/bin/drupal-check > /dev/null 2>&1; then
+  fin exec /var/www/vendor/bin/drupal-check \
+    --no-progress \
+    "$@"
+else
+  echo 'Error: drupal-check is not installed. Please add it via composer.json' >&2
+  exit 1
+fi
+#-------------------------- END: Execution --------------------------------
