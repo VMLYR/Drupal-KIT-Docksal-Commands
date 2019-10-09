@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-# Abort if anything fails
-set -e
+#: exec_target = cli
 
 ## Run Code Sniffer (phpcbf) against given path
 ##
@@ -12,8 +11,10 @@ set -e
 ## Includes extensions: php, module, inc, install, test, profile, theme
 ## Ignores:   *.pages*.inc
 
+set -e
+
 #-------------------------- Execution --------------------------------
-fin exec /var/www/vendor/bin/phpcbf \
+"${PROJECT_ROOT}/vendor/bin/phpcbf" \
   --standard=Drupal -n \
   --extensions="php,module,inc,install,test,profile,theme" \
   --ignore="*.pages*.inc,*.yml,.docksal,*.js,*.jpg,*.png,settings*.php,*.txt" \
