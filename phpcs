@@ -15,9 +15,7 @@ set -e
 
 #-------------------------- Execution --------------------------------
 # Wrap the command below to hide output.
-output=$("${PROJECT_ROOT}/vendor/bin/phpcs" --config-set installed_paths "${PROJECT_ROOT}/vendor/drupal/coder/coder_sniffer")
-
-"${PROJECT_ROOT}/vendor/bin/phpcs" \
+phpcs \
   --standard=Drupal -n \
   --extensions="php,module,inc,install,test,profile,theme" \
   --ignore="*.pages*.inc,*.yml,.docksal,*.js,*.jpg,*.png,settings*.php,*.txt" \

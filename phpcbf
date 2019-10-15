@@ -14,7 +14,7 @@
 set -e
 
 #-------------------------- Execution --------------------------------
-"${PROJECT_ROOT}/vendor/bin/phpcbf" \
+phpcbf \
   --standard=Drupal -n \
   --extensions="php,module,inc,install,test,profile,theme" \
   --ignore="*.pages*.inc,*.yml,.docksal,*.js,*.jpg,*.png,settings*.php,*.txt" \
