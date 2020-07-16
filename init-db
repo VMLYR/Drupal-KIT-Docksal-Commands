@@ -16,7 +16,9 @@ for SITE in $SITES; do
   fi
 
   fin db cli GRANT ALL ON $SITE.* TO 'user' > /dev/null 2>&1
-
 done
+
+# Blank echo as a temporary fix for this command to not cause 'fin init' to exit immediately after running it.
+echo ""
 
 #-------------------------- CLOSE: Execution --------------------------------
