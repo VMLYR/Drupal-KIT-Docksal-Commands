@@ -2,16 +2,19 @@
   "name": "vmlyr-drupal/kit-docksal-commands",
   "description": "Docksal Commands for VMLYR Drupal KIT",
   "license": "GPL-2.0+",
-  "type": "drupal-drush",
+  "type": "drupal-console",
   "homepage": "https://github.com/VML/Drupal-KIT-Docksal-Commands",
   "authors": [
     {
       "name": "Garrett Rathbone",
-      "email": "garrett.rathbone@vml.com"
+      "email": "garrett.rathbone@vmlyr.com"
     }
   ],
   "require": {
     "composer/installers": "^1.9",
     "vmlyr-drupal/kit-drush-commands": "^8.0"
+  },
+  "extra": {
+    "installer-name": "kit"
   }
 }
