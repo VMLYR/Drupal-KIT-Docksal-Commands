@@ -13,8 +13,5 @@
   "require": {
     "composer/installers": "^1.9",
     "vmlyr-drupal/kit-drush-commands": "^8.0"
-  },
-  "extra": {
-    "installer-name": "kit"
   }
 }
