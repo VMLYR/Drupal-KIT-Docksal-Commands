@@ -2,7 +2,7 @@
   "name": "vmlyr-drupal/kit-docksal-commands",
   "description": "Docksal Commands for VMLYR Drupal KIT",
   "license": "GPL-2.0+",
-  "type": "library",
+  "type": "drupal-drush",
   "homepage": "https://github.com/VML/Drupal-KIT-Docksal-Commands",
   "authors": [
     {
@@ -11,7 +11,7 @@
     }
   ],
   "require": {
-    "oomphinc/composer-installers-extender": "^1.0 || ^2.0",
+    "composer/installers": "^1.9",
     "vmlyr-drupal/kit-drush-commands": "^8.0"
   }
 }
