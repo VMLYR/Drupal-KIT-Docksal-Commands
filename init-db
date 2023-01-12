@@ -7,7 +7,7 @@
 #-------------------------- BEGIN: Execution --------------------------------
 
 cd ${PROJECT_ROOT}/${DOCROOT}
-SITES=$(fin drush sa --format=list | tr -d '\@:\r\'\' | sed -e 's/\..*$//' | sort | uniq)
+SITES=$(fin drush sa --format=list | grep @ | tr -d '\@:\r\'\' | sed -e 's/\..*$//' | sort | uniq)
 cd ${PROJECT_ROOT}
 
 for SITE in $SITES; do
